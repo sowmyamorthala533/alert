@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Click Me!</button>
+     <button>Click Me!</button> 
+    <script>
+        const btn1=document.getElementsByTagName("button")[0]
+        // btn1.addEventListener("click",()=>{alert("you clicked button1")})
+        const btn2=document.getElementsByTagName("button")[1]
+        // btn2.addEventListener("click",()=>{alert("you clicked button2")})
+     btn1.addEventListener("click",(event)=>{console.log(event.srcElement.textContent)})
+    btn2.addEventListener("click",(event)=>{alert(event.srcElement.textContent)})
+    </script>
+</body>
+</html>
